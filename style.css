@@ -2,4 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+li:hover {
+    background-color: grey;
+}
+
+/* li {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    right: 10px;
+     top: 50%; 
+    top: 0;
+} */
+
+.circle {
+    /* display: none; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid red;
+
+}
+
+
+
+.list-group-item {
+    justify-content: space-between;
 }
