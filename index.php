@@ -38,7 +38,10 @@
 
 
                 </ul>
-
+                <div class="input-group my-3">
+                    <input v-model="task" type="text" class="form-control" placeholder="Inserisci elemento" aria-label="Inserisci elemento" aria-describedby="button-addon2" name="new_task" id="new_task">
+                    <button @click="addTask()" class="btn btn-outline-warning" type="submit" id="button-addon2">inserisci</button>
+                </div>
             </div>
         </div>
     </main>

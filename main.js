@@ -8,7 +8,8 @@ createApp({
             url: 'server.php',
             toDoList: [
 
-            ]
+            ],
+            task: ''
         }
     },
     methods: {
@@ -20,7 +21,25 @@ createApp({
                     console.log(response.data);
                 })
 
+        },
+        addTask() {
+            console.log(this.task);
+
+            axios
+                .post(this.url, {
+                    task: this.task
+                }, {
+                    headers: { 'Content_type': 'multipart/form-data' }
+                })
+                .then(response => {
+                    console.log(response.data);
+
+                    response.data = this.toDoList
+                    // console.log(response.data);
+
+                })
         }
+
     },
     mounted() {
         this.Server(this.url)
