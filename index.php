@@ -45,7 +45,7 @@
     </footer>
     <!-- /#site_footer -->
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/vue@3.2.41/dist/vue.global.min.js'></script>
     <script src='./main.js'></script>
 
